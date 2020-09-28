@@ -73,13 +73,12 @@ setup(
     cmdclass={'install': InstallPlatlib},
     distclass=BinaryDistribution,
     install_requires=[
+        'attrs',
         'tensorflow>=2.3.0, <2.4',
         'tensorflow_hub>=0.8.0',
     ],
     extras_require={
-        'tensorflow_cpu': [
-            'tensorflow-cpu>=2.3.0, <2.4',
-        ],
+        'tensorflow_cpu': ['tensorflow-cpu>=2.3.0, <2.4',],
         'tests': [
             'absl-py',
             'pytest',
